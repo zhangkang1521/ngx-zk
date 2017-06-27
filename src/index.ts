@@ -4,6 +4,7 @@ import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { SampleService } from './sample.service';
+import {FenToYuanPipe} from "./pipe/fen-to-yuan.pipe";
 
 export * from './sample.component';
 export * from './sample.directive';
@@ -17,12 +18,14 @@ export * from './sample.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    FenToYuanPipe
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    FenToYuanPipe
   ]
 })
 export class SampleModule {
